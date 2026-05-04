@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Our Church</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">🙏 Our Church</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container" style="padding: 40px 20px;">
+        <h1>Church Events</h1>
+        <p style="font-size: 18px; color: #666; margin-bottom: 30px;">Join us for these upcoming events and be part of our community!</p>
+
+        <!-- Event Listing -->
+        <div class="events-list">
+            <div class="event-detail">
+                <div class="event-header">
+                    <span class="event-date-badge">May 15, 2026</span>
+                    <h2>Community Concert</h2>
+                </div>
+                <div class="event-body">
+                    <p><strong>Time:</strong> 7:00 PM - 9:00 PM</p>
+                    <p><strong>Location:</strong> Main Church Hall</p>
+                    <p><strong>Description:</strong> Join us for a special musical evening featuring local artists from our community. This is a family-friendly event with refreshments provided. All are welcome!</p>
+                    <p><strong>Cost:</strong> Free (Donations welcome)</p>
+                    <button class="btn btn-primary" onclick="registerEvent('Community Concert')">Register Now</button>
+                </div>
+            </div>
+
+            <div class="event-detail">
+                <div class="event-header">
+                    <span class="event-date-badge">May 22, 2026</span>
+                    <h2>Youth Group Picnic</h2>
+                </div>
+                <div class="event-body">
+                    <p><strong>Time:</strong> 12:00 PM - 4:00 PM</p>
+                    <p><strong>Location:</strong> Community Park</p>
+                    <p><strong>Description:</strong> Fun outdoor activities, games, and fellowship for young people. Bring your friends and enjoy food, sports, and great company.</p>
+                    <p><strong>Cost:</strong> Free</p>
+                    <button class="btn btn-primary" onclick="registerEvent('Youth Group Picnic')">Register Now</button>
+                </div>
+            </div>
+
+            <div class="event-detail">
+                <div class="event-header">
+                    <span class="event-date-badge">Jun 5, 2026</span>
+                    <h2>Summer Vacation Bible School</h2>
+                </div>
+                <div class="event-body">
+                    <p><strong>Time:</strong> 9:00 AM - 12:00 PM (5 days)</p>
+                    <p><strong>Location:</strong> Education Building</p>
+                    <p><strong>Description:</strong> Interactive program for children ages 5-12. Features Bible lessons, crafts, games, and singing. Daily themes exploring faith and values.</p>
+                    <p><strong>Cost:</strong> $25 per child (Financial assistance available)</p>
+                    <button class="btn btn-primary" onclick="registerEvent('Summer VBS')">Register Now</button>
+                </div>
+            </div>
+
+            <div class="event-detail">
+                <div class="event-header">
+                    <span class="event-date-badge">Jun 15, 2026</span>
+                    <h2>Community Service Day</h2>
+                </div>
+                <div class="event-body">
+                    <p><strong>Time:</strong> 8:00 AM - 12:00 PM</p>
+                    <p><strong>Location:</strong> Various locations</p>
+                    <p><strong>Description:</strong> Join us as we serve our community through local service projects. Opportunities for all ages and abilities to make a difference.</p>
+                    <p><strong>Cost:</strong> Free</p>
+                    <button class="btn btn-primary" onclick="registerEvent('Service Day')">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Our Church. All rights reserved.</p>
+            <p>Contact: info@ourchurch.com | Phone: (555) 123-4567</p>
+        </div>
+    </footer>
+
+    <script>
+        function registerEvent(eventName) {
+            alert(`Thank you for registering for: ${eventName}\n\nWe'll send you confirmation details via email. Check your inbox!`);
+        }
+    </script>
+</body>
+</html>
